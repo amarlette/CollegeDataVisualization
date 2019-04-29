@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>$$$Colloges</title>
+	<!-- Always include D3 first. -->
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<!-- Include main.js, which is where all our code lives -->
+	<script src="main.js"></script>
+	<!-- Include any styles we want to add to our page -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+      background-color: black;
+      color: #ffffff;
+      }
+
+    .text {
+      color: #ffffff;
+    }
+
+
+    #chart3 {
+      width:700px;
+    }
+
+    #chart4 {
+      width:700px;
+    }
+
+    .toolTip {
+      position: absolute;
+      display: none;
+      min-width: 80px;
+      height: auto;
+      background: none repeat scroll 0 0 #001a29;
+      padding: 14px;
+      text-align: center;
+    }
+
+    
+    .bar {
+      fill: steelblue;
+      opacity: 0.5;
+    }
+
+    .selected {
+	    stroke: red;
+	    fill:red;
+    }
+    
+    .bar2 {
+      fill: gray;
+      opacity: 0.5;
+    }
+
+  
+  </style>
+<body>
+	<h1>The Best Bang for Your Buck at the Best Colleges</h1>
+  <p>College can be exspensive and when looking at the Top 30 Colleges in the United States, one would think that they spend the most money on students due to their high prices. However this is not always true and this graph can show you how much these Colleges are <strong>actually</strong> spending on students. Debt is also a big factor when choosing a college, look at the Top 30 schools and see if that sky high price tag of attendence is reflected in your Salary after graduation.</p>
+  <div id="graph1">
+      <div id="chart3">
+          <strong>Name:</strong> <span id="name1"></span><br/>
+          <strong>Average Cost:</strong> <span id="cost"></span><br/>
+          <strong>Expenditure per Student:</strong> <span id="expend"></span><br/>
+          <strong>Median Debt On Graduation:</strong> <span id="debt"></span><br/>
+          <strong>Median Earnings 8 Years After Entry:</strong> <span id="earnings"></span><br/>
+      </div>
+  </div>
+</body>
+</html>
